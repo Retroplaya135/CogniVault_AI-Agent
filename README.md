@@ -126,3 +126,22 @@ curl -X POST http://127.0.0.1:5000/tasks \
   -H "Content-Type: application/json" \
   -d '{"description": "Analyze market trends for Q4."}'
 ```
+
+Response Example:
+
+```
+{
+  "message": "Task created.",
+  "task_id": 1
+}
+```
+
+List All Tasks
+
+Retrieve all tasks with:
+
+```
+curl http://127.0.0.1:5000/tasks
+```
+
+
