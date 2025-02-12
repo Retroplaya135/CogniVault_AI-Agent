@@ -45,6 +45,27 @@ Organizations can use CogniVault to maintain an audit trail of all automated dec
 
 ---
 
+## Configuration
+
+The following environment variables can be set to customize the behavior of the agent:
+
+- **`DATABASE_URL`**: The SQLAlchemy database URL.  
+  _Default_: `sqlite:///ai_agent.db`
+
+- **`POLL_INTERVAL`**: Seconds between each background polling.  
+  _Default_: `5`
+
+- **`HOST`**: Flask server host.  
+  _Default_: `127.0.0.1`
+
+- **`PORT`**: Flask server port.  
+  _Default_: `5000`
+
+- **`DEBUG_MODE`**: Flask debug mode.  
+  _Default_: `False`
+
+---
+
 ---
 
 ## Requirements
