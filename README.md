@@ -42,3 +42,20 @@ An AI assistant integrated with CogniVault can reference previous tasks and anal
 Organizations can use CogniVault to maintain an audit trail of all automated decisions and analyses. This is useful for compliance, troubleshooting, or further refining the AI agent’s performance by analyzing trends in the logs.
 
 ---
+
+---
+
+## Requirements
+
+- Python 3.8 or higher
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Retroplaya135/CogniVault_AI-Agent.git
+   cd CogniVault_AI-Agent
