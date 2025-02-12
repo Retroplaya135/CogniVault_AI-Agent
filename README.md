@@ -82,3 +82,12 @@ The following environment variables can be set to customize the behavior of the 
    ```bash
    git clone https://github.com/Retroplaya135/CogniVault_AI-Agent.git
    cd CogniVault_AI-Agent
+
+2. Create and Activate a Virtual Environment (Optional but Recommended):
+
+```
+python -m venv venv
+```
+```
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
