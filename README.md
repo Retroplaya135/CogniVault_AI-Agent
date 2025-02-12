@@ -160,3 +160,17 @@ Response Example:
 ]
 ```
 
+Get Details of a Specific Task
+
+Retrieve a task by its ID:
+
+```
+curl http://127.0.0.1:5000/tasks/1
+```
+
+List All Memories
+
+View all stored memories:
+```
+curl http://127.0.0.1:5000/memories
+```
