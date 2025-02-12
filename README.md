@@ -13,17 +13,19 @@ This is a conceptual prototype meant to illustrate one way to “ground” an AI
 ## Features
 
 - **Persistent Storage:**  
-  Uses SQLite (via SQLAlchemy) to store tasks, memories, and logs in a structured and queryable format.
+  Uses SQLAlchemy to persist tasks, memories, and logs in a SQL database.
 
-- **Task Processing:**  
-  Processes tasks by generating simulated responses using a dummy language model function (`generate_response`).
-  
-- **Memory & Logging:**  
-  Persists outcomes as “memories” and logs all processing steps for auditability and further analysis.
+- **REST API:**  
+  A Flask-based API to create new tasks and retrieve task, memory, and log data.
 
-- **Extensible Design:**  
-  Serves as a foundation for more advanced AI agents that “remember” context, learn from past decisions, and continuously evolve.
+- **Background Task Processing:**  
+  A background worker continuously polls for pending tasks, processes them using a dummy language model, updates task statuses, and stores results.
 
+- **Robust Logging:**  
+  Logs agent operations to both the console and a rotating log file (`ai_agent.log`).
+
+- **Configurable Settings:**  
+  Easily configure database URL, polling interval, server host/port, and debug mode via environment variables.
 
 ---
 
