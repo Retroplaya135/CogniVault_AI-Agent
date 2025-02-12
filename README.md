@@ -17,3 +17,10 @@ This is a conceptual prototype meant to illustrate one way to “ground” an AI
 
 - **Task Processing:**  
   Processes tasks by generating simulated responses using a dummy language model function (`generate_response`).
+  
+- **Memory & Logging:**  
+  Persists outcomes as “memories” and logs all processing steps for auditability and further analysis.
+
+- **Extensible Design:**  
+  Serves as a foundation for more advanced AI agents that “remember” context, learn from past decisions, and continuously evolve.
+
