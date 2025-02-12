@@ -174,3 +174,11 @@ View all stored memories:
 ```
 curl http://127.0.0.1:5000/memories
 ```
+
+List All Logs
+
+View all log entries:
+
+```
+curl http://127.0.0.1:5000/logs
+```
