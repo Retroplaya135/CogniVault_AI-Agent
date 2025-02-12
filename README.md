@@ -145,3 +145,18 @@ curl http://127.0.0.1:5000/tasks
 ```
 
 
+Response Example:
+
+```
+[
+  {
+    "id": 1,
+    "description": "Analyze market trends for Q4.",
+    "status": "completed",
+    "result": "Analyzed data: Found significant trends in user engagement.",
+    "created_at": "2025-02-09T10:00:00",
+    "updated_at": "2025-02-09T10:00:05"
+  }
+]
+```
+
