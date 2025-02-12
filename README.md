@@ -97,3 +97,15 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
    pip install flask sqlalchemy
 
    ```
+
+Usage
+
+Running the Agent
+To start the AI agent (which launches both the REST API server and the background worker), run:
+
+```
+python ai_agent_full.py
+```
+
+
+
