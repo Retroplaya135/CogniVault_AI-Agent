@@ -110,10 +110,10 @@ python ai_agent_full.py
 
 The agent will:
 
-Create (or use) the specified database (by default, ai_agent.db).
-Start a background worker thread that polls for pending tasks every 5 seconds.
-Launch the Flask REST API server on the configured host and port.
-Interacting with the REST API
-You can use tools like curl, Postman, or your browser to interact with the API.
+>>> Create (or use) the specified database (by default, ai_agent.db).
+>>> Start a background worker thread that polls for pending tasks every 5 seconds.
+>>> Launch the Flask REST API server on the configured host and port.
+>>> Interacting with the REST API
+>>> You can use tools like curl, Postman, or your browser to interact with the API.
 
 
