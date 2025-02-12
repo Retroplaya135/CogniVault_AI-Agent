@@ -117,3 +117,12 @@ The agent will:
 >>> You can use tools like curl, Postman, or your browser to interact with the API.
 
 
+Create a New Task
+
+Submit a new task using a POST request:
+
+```
+curl -X POST http://127.0.0.1:5000/tasks \
+  -H "Content-Type: application/json" \
+  -d '{"description": "Analyze market trends for Q4."}'
+```
