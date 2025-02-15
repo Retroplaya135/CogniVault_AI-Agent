@@ -201,3 +201,10 @@ A simulated generate_response function that imitates processing delays and retur
 #### AI Agent Class:
 The core class that continuously polls for pending tasks, processes them, updates statuses, stores results in the database, and logs the outcomes.
 
+#### Flask REST API Endpoints:
+Provides endpoints to create tasks, list tasks, retrieve a specific task, and list memories/logs.
+
+#### Background Worker:
+Runs in a separate thread to process tasks independently of the API requests.
+
+
