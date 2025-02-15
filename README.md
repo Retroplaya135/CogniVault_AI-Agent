@@ -215,3 +215,10 @@ Replace the dummy generate_response function with an integration to your preferr
 
 #### Enhanced Database Schema:
 Expand the schema to include additional fields (e.g., task complexity, user feedback) or additional models as needed.
+
+####API Security:
+Add authentication and authorization mechanisms to protect your API endpoints.
+
+#### Error Handling & Testing:
+Improve error handling, logging, and add unit/integration tests to ensure reliability.
+
