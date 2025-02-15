@@ -152,6 +152,30 @@ The following environment variables can be set to customize the behavior of the 
 
 ---
 
+```
+Client             Flask API           Database            Background Worker
+  |                    |                   |                          |
+  | POST /tasks        |                   |                          |
+  |------------------->|                   |                          |
+  |                    |  Create Task      |                          |
+  |                    |------------------>|                          |
+  |                    |  Task Created     |                          |
+  |                    |<------------------|                          |
+  |                    | Return Task ID    |                          |
+  |<-------------------|                   |                          |
+  |                    |                   |                          |
+  |                    |                   |  (Polling Loop)          |
+  |                    |                   |<-------------------------|
+  |                    |                   |   Query Pending Tasks    |
+  |                    |                   |------------------------->|
+  |                    |                   |   Return Pending Task    |
+  |                    |                   |<-------------------------|
+  |                    |                   |   Process Task (generate_response)
+  |                    |                   |------------------------->|
+  |                    |                   |   Update Task, Save Log/Memory
+  |                    |                   |------------------------->|
+```
+
 ---
 
 ## Requirements
