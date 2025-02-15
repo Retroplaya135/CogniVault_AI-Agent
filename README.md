@@ -62,6 +62,34 @@ This is a conceptual prototype meant to illustrate one way to “ground” an AI
 
 ---
 
+```
+       +------------------------+
+       |  Client (curl, Postman)|
+       +-----------+------------+
+                   |
+                   v
+       +------------------------+
+       |  POST /tasks Endpoint  |
+       +------------------------+
+                   |
+                   v
+       +------------------------+
+       |  Validate JSON Input   |
+       +------------------------+
+                   |
+                   v
+       +------------------------+
+       |  Create Task Record    |
+       |    in the Database     |
+       +------------------------+
+                   |
+                   v
+       +------------------------+
+       |  Return Response with  |
+       |     Task ID & Status   |
+       +------------------------+
+```
+
 ## Use Cases & Examples
 
 ### 1. Automated Task Processing
