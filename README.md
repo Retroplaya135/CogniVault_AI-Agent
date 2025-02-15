@@ -64,6 +64,8 @@ This is a conceptual prototype meant to illustrate one way to “ground” an AI
 
 ---
 
+# REST API Workflow Diagram
+
 ```
        +------------------------+
        |  Client (curl, Postman)|
