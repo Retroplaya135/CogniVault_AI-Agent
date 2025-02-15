@@ -10,6 +10,39 @@ This is a conceptual prototype meant to illustrate one way to “ground” an AI
 
 ---
 
+```
+                   +-----------------------------+
+                   |          End User           |
+                   | (Browser, curl, Postman, etc.)|
+                   +--------------+--------------+
+                                  |
+                                  v
+                    +---------------------------+
+                    |    Flask REST API Server  |
+                    |   (ai_agent_full.py)      |
+                    +--------------+------------+
+                                   |
+         +-------------------------+-------------------------+
+         |                         |                         |
+         v                         v                         v
++----------------+        +----------------+        +----------------+
+|   Task Model   |        |  Memory Model  |        |   LogEntry   |
+| (SQLAlchemy)   |        | (SQLAlchemy)   |        |   Model      |
++----------------+        +----------------+        +----------------+
+         \                         |                         /
+          \                        |                        /
+           \                       |                       /
+            \                      |                      /
+             \                     |                     /
+              \                    |                    /
+               \                   |                   /
+                \                  |                  /
+                 +--------------------------------------+
+                 |         SQL Database (SQLite/       |
+                 |         PostgreSQL, etc.)           |
+                 +--------------------------------------+
+```
+
 ## Features
 
 - **Persistent Storage:**  
