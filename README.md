@@ -110,6 +110,8 @@ Organizations can use CogniVault to maintain an audit trail of all automated dec
 
 ---
 
+#Background Worker Workflow Diagram
+
 ```
          +---------------------------------+
          |     Background Worker Loop      |
