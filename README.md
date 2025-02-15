@@ -293,6 +293,39 @@ View all log entries:
 curl http://127.0.0.1:5000/logs
 ```
 
+# Data Model Diagram 
+
+```
+
++-----------------------------+
+|           Task              |
++-----------------------------+
+| id: Integer (PK)            |
+| description: Text           |
+| status: String              |
+| result: Text                |
+| created_at: DateTime        |
+| updated_at: DateTime        |
++-----------------------------+
+
++-----------------------------+
+|          Memory             |
++-----------------------------+
+| id: Integer (PK)            |
+| info: Text                  |
+| created_at: DateTime        |
++-----------------------------+
+
++-----------------------------+
+|         LogEntry            |
++-----------------------------+
+| id: Integer (PK)            |
+| level: String               |
+| message: Text               |
+| created_at: DateTime        |
++-----------------------------+
+
+```
 
 Code Overview
 
