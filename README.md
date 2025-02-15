@@ -106,6 +106,31 @@ Organizations can use CogniVault to maintain an audit trail of all automated dec
 
 ---
 
+```
+         +---------------------------------+
+         |     Background Worker Loop      |
+         +----------------+------------------+
+                          |
+                          v
+         +---------------------------------+
+         | Poll Database for Pending Tasks |
+         |  (where status = "pending")     |
+         +---------------------------------+
+                          |
+                          v
+         +---------------------------------+
+         | For Each Pending Task:          |
+         |   - Call Dummy LLM (generate_response)  |
+         |   - Update Task (result, status)|
+         |   - Save Memory & Log Entry     |
+         +---------------------------------+
+                          |
+                          v
+         +---------------------------------+
+         |  Sleep for POLL_INTERVAL seconds|
+         +---------------------------------+
+```
+
 ## Configuration
 
 The following environment variables can be set to customize the behavior of the agent:
