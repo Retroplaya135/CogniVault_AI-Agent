@@ -208,3 +208,10 @@ Provides endpoints to create tasks, list tasks, retrieve a specific task, and li
 Runs in a separate thread to process tasks independently of the API requests.
 
 
+Extending the Prototype
+
+#### Language Model Integration:
+Replace the dummy generate_response function with an integration to your preferred language model API (e.g., OpenAI, Hugging Face).
+
+#### Enhanced Database Schema:
+Expand the schema to include additional fields (e.g., task complexity, user feedback) or additional models as needed.
