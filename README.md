@@ -192,4 +192,8 @@ The project is structured as a single Python script (ai_agent_full.py) that incl
 Sets up environment-based configuration and robust logging (both console and rotating file).
 --->Database Models:
 SQLAlchemy ORM models for Task, Memory, and LogEntry.
+--->Dummy Language Model:
+A simulated generate_response function that imitates processing delays and returns random responses. Replace this with a call to a real LLM.
+--->AI Agent Class:
+The core class that continuously polls for pending tasks, processes them, updates statuses, stores results in the database, and logs the outcomes.
 
