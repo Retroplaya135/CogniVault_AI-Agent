@@ -225,3 +225,7 @@ Improve error handling, logging, and add unit/integration tests to ensure reliab
 User Interface:
 Build a frontend dashboard to interact with the API and visualize task statuses, memories, and logs in real time.
 
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
