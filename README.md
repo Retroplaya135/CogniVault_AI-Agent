@@ -158,6 +158,8 @@ The following environment variables can be set to customize the behavior of the 
 
 ---
 
+# Sequence Diagram for Task Processing
+
 ```
 Client             Flask API           Database            Background Worker
   |                    |                   |                          |
