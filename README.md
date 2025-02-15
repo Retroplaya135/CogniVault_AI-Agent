@@ -10,6 +10,8 @@ This is a conceptual prototype meant to illustrate one way to “ground” an AI
 
 ---
 
+# Architectural Diagram
+
 ```
                    +-----------------------------+
                    |          End User           |
