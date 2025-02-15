@@ -188,7 +188,9 @@ Code Overview
 
 The project is structured as a single Python script (ai_agent_full.py) that includes:
 
+```
 --->Configuration & Logging:
+```
 Sets up environment-based configuration and robust logging (both console and rotating file).
 --->Database Models:
 SQLAlchemy ORM models for Task, Memory, and LogEntry.
