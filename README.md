@@ -222,3 +222,6 @@ Add authentication and authorization mechanisms to protect your API endpoints.
 #### Error Handling & Testing:
 Improve error handling, logging, and add unit/integration tests to ensure reliability.
 
+User Interface:
+Build a frontend dashboard to interact with the API and visualize task statuses, memories, and logs in real time.
+
