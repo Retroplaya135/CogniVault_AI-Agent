@@ -358,7 +358,7 @@ Provides endpoints to create tasks, list tasks, retrieve a specific task, and li
 #### Background Worker:
 Runs in a separate thread to process tasks independently of the API requests.
 
-
+# Logging Flow Diagram
            +--------------------+
            |   AIAgent Class   |
            +--------------------+
