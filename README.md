@@ -359,36 +359,23 @@ Provides endpoints to create tasks, list tasks, retrieve a specific task, and li
 Runs in a separate thread to process tasks independently of the API requests.
 
 
-+-----------------------------+
-|           Task              |
-+-----------------------------+
-| id: Integer (PK)            |
-| description: Text           |
-| status: String              |
-| result: Text                |
-| created_at: DateTime        |
-| updated_at: DateTime        |
-+-----------------------------+
+           +--------------------+
+           |   AIAgent Class   |
+           +--------------------+
+                     |
+                     v
+         +-----------------------+
+         |  Log Message Created  |
+         +-----------------------+
+                     |
+         +-----------+------------+
+         |                        |
+         v                        v
++------------------+     +-------------------------+
+| Console Logger   |     | Rotating File Handler   |
+| (Stream Handler) |     | (ai_agent.log file)     |
++------------------+     +-------------------------+
 
-+-----------------------------+
-|          Memory             |
-+-----------------------------+
-| id: Integer (PK)            |
-| info: Text                  |
-| created_at: DateTime        |
-+-----------------------------+
-
-+-----------------------------+
-|         LogEntry            |
-+-----------------------------+
-| id: Integer (PK)            |
-| level: String               |
-| message: Text               |
-| created_at: DateTime        |
-+-----------------------------+
-
-
-Extending the Prototype
 
 #### Language Model Integration:
 Replace the dummy generate_response function with an integration to your preferred language model API (e.g., OpenAI, Hugging Face).
