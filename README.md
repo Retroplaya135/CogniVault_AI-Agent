@@ -359,6 +359,35 @@ Provides endpoints to create tasks, list tasks, retrieve a specific task, and li
 Runs in a separate thread to process tasks independently of the API requests.
 
 
++-----------------------------+
+|           Task              |
++-----------------------------+
+| id: Integer (PK)            |
+| description: Text           |
+| status: String              |
+| result: Text                |
+| created_at: DateTime        |
+| updated_at: DateTime        |
++-----------------------------+
+
++-----------------------------+
+|          Memory             |
++-----------------------------+
+| id: Integer (PK)            |
+| info: Text                  |
+| created_at: DateTime        |
++-----------------------------+
+
++-----------------------------+
+|         LogEntry            |
++-----------------------------+
+| id: Integer (PK)            |
+| level: String               |
+| message: Text               |
+| created_at: DateTime        |
++-----------------------------+
+
+
 Extending the Prototype
 
 #### Language Model Integration:
