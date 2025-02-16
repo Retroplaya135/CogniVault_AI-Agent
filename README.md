@@ -393,6 +393,29 @@ User Interface:
 Build a frontend dashboard to interact with the API and visualize task statuses, memories, and logs in real time.
 
 
+             +-----------------------------------+
+             |        Production Server          |
+             |    (Docker, Kubernetes, etc.)     |
+             +----------------+------------------+
+                              |
+                              v
+             +-----------------------------------+
+             |     Flask Application Server      |
+             |   (ai_agent_full.py running)      |
+             +----------------+------------------+
+                              |
+                              v
+             +-----------------------------------+
+             |      SQL Database Server          |
+             |   (SQLite, PostgreSQL, etc.)      |
+             +-----------------------------------+
+                              |
+                              v
+             +-----------------------------------+
+             |  Background Worker Thread (within |
+             |  the Flask App process)           |
+             +-----------------------------------+
+
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
