@@ -359,6 +359,8 @@ Provides endpoints to create tasks, list tasks, retrieve a specific task, and li
 Runs in a separate thread to process tasks independently of the API requests.
 
 # Logging Flow Diagram
+
+```
            +--------------------+
            |   AIAgent Class   |
            +--------------------+
@@ -375,7 +377,7 @@ Runs in a separate thread to process tasks independently of the API requests.
 | Console Logger   |     | Rotating File Handler   |
 | (Stream Handler) |     | (ai_agent.log file)     |
 +------------------+     +-------------------------+
-
+```
 
 #### Language Model Integration:
 Replace the dummy generate_response function with an integration to your preferred language model API (e.g., OpenAI, Hugging Face).
@@ -394,6 +396,7 @@ Build a frontend dashboard to interact with the API and visualize task statuses,
 
 # Deployment Diagram
 
+```
              +-----------------------------------+
              |        Production Server          |
              |    (Docker, Kubernetes, etc.)     |
@@ -416,6 +419,7 @@ Build a frontend dashboard to interact with the API and visualize task statuses,
              |  Background Worker Thread (within |
              |  the Flask App process)           |
              +-----------------------------------+
+```
 
 License
 
